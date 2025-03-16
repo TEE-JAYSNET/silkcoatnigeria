@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* moving the dots up */
+.custom-dots .slick-dots {
+  bottom: 90px; /* Adjust the value to your preference */
+  color: white;
+}
+
+/* Change the color of the active dot */
+.custom-dots .slick-dots li.slick-active button {
+  background: red; /* Set active dot color to white */
+}
+
+/* Change the color of inactive dots */
+.custom-dots .slick-dots li button {
+  background: rgba(
+    255,
+    255,
+    255,
+    255
+  ); /* Set inactive dot color to a semi-transparent white */
+  width: 12px; /* Set width of the dots */
+  height: 12px; /* Set height of the dots */
+  border-radius: 50%; /* Make the dots circular */
+  transition: background 0.3s; /* Smooth transition on color change */
+}
+
+/* Optional: Hover effect */
+.custom-dots .slick-dots li button:hover {
+  background: white; /* Change to white on hover */
+}
+
+/* Add keyframes for the zoom effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1); /* Adjust scale factor as needed */
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1); /* Adjust initial scale factor as needed */
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* handling the zoom animations: */
+.zoom {
+  animation: zoomIn 5s ease-in-out forwards; /* Apply zoomIn animation */
+}
+
+/* If you want to use zoomOut instead, you can apply it as needed */
+.zoom-out {
+  animation: zoomOut 5s ease-in-out forwards; /* Apply zoomOut animation */
+}
+
+/* background image to the banner section */
+.bg-banner {
+  background-image: url("/src/assets/b4.jpg");
+  background-size: cover;
+  background-position: center;
+  /* opacity: 100%; */
+}
+
+.custom-banner h2,
+.custom-banner p,
+.custom-banner h3,
+.custom-banner .text-white {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+/* more custome style */
+.custom-banner {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.custom-banner .number:hover {
+  color: #ff6347; /* Sweet color */
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-banner .line:hover {
+  transform: scale(1.1);
+  border-color: #ff6347;
+}
+
+/* ...................serviceSec.................... */
+.text-red-500 {
+  color: #ff6347; /* Sweet color */
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.cardhover:hover {
+  transform: scale(1.1);
+}
+
+/* Fortfolio section................. */
+.group-hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+/* Testimonials section.............. */
+
+.slick-slide {
+  transition: transform 0.5s ease;
+}
+
+.slick-slide:hover {
+  transform: scale(1.05);
+}
+
+.slick-dots li button:before {
+  color: #ff6347; /* Sweet color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6347; /* Sweet color */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.md\:flex-row {
+  flex-direction: row;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.md\:w-1\/3 {
+  width: 33.333333%;
+}
+
+.md\:w-2\/3 {
+  width: 66.666667%;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-yellow-400 {
+  color: #fbbf24;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ...............contact us................ */
+/* Tailwind CSS already handles most of the required styles */
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.bg-red-500 {
+  background-color: #f56565;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #e53e3e;
+}
+
+.transition {
+  transition-property: all;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* .................footer section............... */
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.hover\:text-red-500:hover {
+  color: #f56565;
+}
+
+.transition {
+  transition-property: all;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: 1rem;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.5rem;
+}
+
+.border-gray-700 {
+  border-color: #4a5568;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
