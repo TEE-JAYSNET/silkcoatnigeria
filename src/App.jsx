@@ -9,7 +9,7 @@ import Contact from "./components/Pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Blog from "./components/Pages/Blog/Blog";
 import Post from "./components/Pages/Blog/Post";
-import ClaimForm from "./components/ClaimForm";
+// import ClaimForm from "./components/ClaimForm";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<Post />} />
         </Routes>
-        <ClaimForm />
+        {/* <ClaimForm /> */}
         <Footer />
       </div>
     </Router>

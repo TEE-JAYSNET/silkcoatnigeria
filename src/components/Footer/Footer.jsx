@@ -25,6 +25,10 @@ const Footer = () => {
             <i className="fas fa-phone-alt text-red-600 mr-4"></i> (+234)
             704-087-4758
           </p>
+          <p>
+            <i className="fas fa-solid fa-envelope text-red-600 mr-4"></i>{" "}
+            info@silkcoatnigeria.com
+          </p>
           {/* Social Icons */}
           <div className="flex space-x-4">
             <a
